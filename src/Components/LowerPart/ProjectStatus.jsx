@@ -26,7 +26,11 @@ function ProjectStatus() {
 
 
   return (
+    <div className='project-status'>
+       <h3>Projetcs Status</h3>
+
     <ReactApexChart options={options} series={series} type="donut" width={400} />
+    </div>
   )
 }
 

@@ -1,90 +1,69 @@
 import React, { useState } from "react";
 import ReactApexChart from "react-apexcharts";
 
-const HiringBarChart = () => {
+const CompanyGrowthBarChart = () => {
   const [series] = useState([
     {
-      data: [400, 430, 448, 470, 540, 580, 690],
+      data: [18, 25, 40, 60, 85,110], // Number of employees
     },
   ]);
 
   const [options] = useState({
     chart: {
       type: "bar",
-      height: 150,
+      height: 350,
       toolbar: {
-        show: false, 
+        show: false,
       },
-    },
-    annotations: {
-      xaxis: [
-        {
-          x: 500,
-          borderColor: "#00E396",
-          label: {
-            borderColor: "#00E396",
-            style: {
-              color: "#fff",
-              background: "#00E396",
-            },
-            text: "X annotation",
-          },
-        },
-      ],
-      yaxis: [
-        {
-          y: "July",
-          y2: "September",
-          label: {
-            text: "Y annotation",
-          },
-        },
-      ],
+      background: '#ffffff', // Set chart background to white
     },
     plotOptions: {
       bar: {
-        horizontal: true,
+        horizontal: false, // Vertical bars
+        columnWidth: '80%', // Width of bars
       },
     },
     dataLabels: {
-      enabled: true,
+      enabled: true, // Show data labels
     },
     xaxis: {
       categories: [
-        "June",
-        "July",
-        "August",
-        "September",
-        "October",
-        "November",
-        "December",
+        "2019", "2020", "2021", "2022", "2023",
+       "2024"
       ],
-    },
-    grid: {
-      xaxis: {
-        lines: {
-          show: true,
-        },
+      title: {
+        text: 'Year',
       },
     },
     yaxis: {
-      reversed: true,
-      axisTicks: {
-        show: true,
+      title: {
+        text: 'Number of Employees',
       },
+      min: 0, // Start y-axis at 0
+    },
+    grid: {
+      borderColor: '#e0e0e0', // Light grey grid lines
+    },
+    fill: {
+      colors: ['#1E90FF'], // Color of the bars
+    },
+    tooltip: {
+      theme: 'dark', // Dark theme for tooltip
     },
   });
 
   return (
-    // <div className="bar-chart" style={{ width: "50%", margin: "0 auto" }}>
+    <div className="bar-chart">
+      <h3>Company Growth</h3>
       <ReactApexChart
         options={options}
         series={series}
         type="bar"
         height={350}
+        width="100%" 
       />
-    // </div>
+    </div>
   );
 };
 
-export default HiringBarChart;
+export default CompanyGrowthBarChart;
