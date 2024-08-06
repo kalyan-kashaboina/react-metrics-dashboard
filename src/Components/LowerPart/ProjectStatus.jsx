@@ -8,7 +8,7 @@ function ProjectStatus() {
       chart: {
         type: 'donut',
       },
-      labels: ['Yet-to-Complete', 'Progress', 'Completed'],
+      labels: ['Yet-to-Start', 'InProgress', 'Completed'],
       responsive: [{
         breakpoint: 480,
         options: {
@@ -27,7 +27,7 @@ function ProjectStatus() {
 
   return (
     <div className='project-status'>
-       <h3>Projetcs Status</h3>
+       <h3>Projects Status</h3>
 
     <ReactApexChart options={options} series={series} type="donut" width={400} />
     </div>
