@@ -10,7 +10,7 @@ const chartData = {
       height:200,
       width:200
     },
-    labels: ['Active', 'Inactive'],
+    labels: ['Assigned', 'unassigned'],
     plotOptions: {
       pie: {
         startAngle: -90,
@@ -48,6 +48,10 @@ function UpperPart() {
       <div className='sub-container'>
         <div style={{marginLeft:"-60px"}} className='headers'>Employees Status</div>
         <ReactApexChart options={data.options} series={data.series} type="donut" />
+      </div>
+      <div className='sub-container'>
+         <div className='headers'>Bench Employees</div>
+         <p className='values'>20</p>
       </div>
     </div>
   );
