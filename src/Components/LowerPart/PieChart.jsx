@@ -27,11 +27,12 @@ export const PieChart = () => {
 
   return (
     <div className="pie-chart">
+       <h3>Employees </h3>
       <ReactApexChart
         options={options}
         series={series}
         type="pie"
-        width={480}
+        width={450}
       />
     </div>
   );

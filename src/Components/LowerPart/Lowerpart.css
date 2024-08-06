@@ -1,10 +1,10 @@
 .charts-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 2fr;
   /* place-items:center; */
   /* justify-content: space-around;
   align-items: flex-start; */
-  
+
   padding-left: 5%;
   padding-right: 5%;
 }
@@ -12,21 +12,21 @@
 .charts-container > div {
   flex: 1;
   margin: 10px;
-
 }
 
-.charts-container .pie-chart {
-  width: 50%;
-  /* grid-column: 2;
-  grid-row: 1; */
-
+/* .charts-container .pie-chart {
+  width: 30%;
 }
-/* .pie-chart{
-    position: absolute;
-    top: 60%;
-} */
 
 .charts-container .bar-chart {
-  width: 50%;
-  /* grid-column: 2; */
+  width: 40%;
 }
+.charts-container .project-status {
+  width: 30%;
+} */
+.pie-chart, .project-status, .bar-char {
+  width: 100%; /* Ensure charts take up full width within their grid cell */
+}
+
+
+
