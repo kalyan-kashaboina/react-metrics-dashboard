@@ -3,6 +3,8 @@ import { PieChart } from "./PieChart";
 import HiringBarChart from "./HiringBarChart";
 import "./Lowerpart.css";
 import ProjectStatus from "./ProjectStatus";
+import RecruitmentFunnel from "./RecruitmentFunnel.jsx";
+import CompanyTurnOver from "./CompanyTurnOver";
 
 function LowerPart() {
   return (
@@ -12,6 +14,8 @@ function LowerPart() {
         <PieChart />
         <HiringBarChart />
         <ProjectStatus/>
+        <RecruitmentFunnel/>
+        <CompanyTurnOver/>
       </div>
     </>
   );
