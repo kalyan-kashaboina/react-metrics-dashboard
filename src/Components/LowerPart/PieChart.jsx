@@ -22,21 +22,34 @@ export const PieChart = () => {
         },
       },
     ],
+    dataLabels: {
+      enabled: true,
+      formatter: (val, { seriesIndex }) => {
+        return series[seriesIndex]; // Show the actual number
+      },
+      style: {
+        colors: ['#ffffff'] // Customize text color if needed
+      }
+    },
+    tooltip: {
+      y: {
+        formatter: (val) => {
+          return val; // Show the actual number in the tooltip
+        },
+      },
+    },
   });
 
   return (
-    <>
-      
-      <div className="pie-chart">
-      <h3>Employees </h3>
-        <ReactApexChart
-          options={options}
-          series={series}
-          type="pie"
-          width={400}
-          height={250}
-        />
-      </div>
-    </>
+    <div className="pie-chart">
+      <h3>Employees Based on Department</h3>
+      <ReactApexChart
+        options={options}
+        series={series}
+        type="pie"
+        width={400}
+        height={250}
+      />
+    </div>
   );
 };

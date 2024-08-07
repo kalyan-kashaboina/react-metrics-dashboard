@@ -5,21 +5,31 @@ import "./MainLowerPart.css";
 import ProjectStatus from "./ProjectStatus";
 import LineChart from "./LineChart";
 import ProjectsPerYear from "./RecruitmentGraph";
+import EmployeesWorking from "./EmployeesWorking";
 
 function LowerPart() {
   return (
     <>
       <div className="charts-container">
+        <div>
           <PieChart />
-          <ProjectStatus />
-          <CompanyGrowthBarChart />
-      </div>
-      <div className="charts-container lower-Charts">
-        <div >
+        </div>
+        <div>
           <ProjectsPerYear />
         </div>
         <div>
           <LineChart />
+        </div>
+      </div>
+      <div className="charts-container">
+        <div>
+          <ProjectStatus />
+        </div>
+        <div>
+          <CompanyGrowthBarChart /> 
+        </div>
+        <div>
+          <EmployeesWorking />
         </div>
       </div>
     </>

@@ -1,10 +1,15 @@
-.charts-container{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 40px;
-    flex-wrap: wrap;
+.charts-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  /* align-items: space-between; */
+  /* margin: 0px; */
+  gap: 40px;
+  flex-wrap: wrap;
 }
-.lower-Charts{
-    gap: 150px;
+.charts {
+  gap: 50px;
+}
+.project {
+  margin-left: -20px;
 }
