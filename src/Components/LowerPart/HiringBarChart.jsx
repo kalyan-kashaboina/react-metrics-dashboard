@@ -59,7 +59,7 @@ const CompanyGrowthBarChart = () => {
         options={options}
         series={series}
         type="bar"
-        height={300}
+        height={250}
         width="100%" 
       />
     </div>

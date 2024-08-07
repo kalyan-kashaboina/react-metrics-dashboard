@@ -5,6 +5,7 @@
 }
 .sub-container{
     display: flex;
+    height: 120px;
     flex-direction: column;
 }
 .headers{

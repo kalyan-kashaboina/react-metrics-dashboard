@@ -7,7 +7,7 @@ const chartData = {
   options: {
     chart: {
       type: 'donut',
-      height:200,
+      height:100,
       width:200
     },
     labels: ['Assigned', 'unassigned'],
@@ -22,10 +22,10 @@ const chartData = {
       breakpoint: 480,
       options: {
         chart: {
-          width: 250
+          width: 150
         },
         legend: {
-          position: 'bottom'
+          horizontalAlign: 'center',
         }
       }
     }]
