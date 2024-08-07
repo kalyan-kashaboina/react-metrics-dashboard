@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import ReactApexChart from 'react-apexcharts';
-import './linechart.css'
+// import './linechart.css'
 
 const LineChart = () => {
   const [series] = useState([

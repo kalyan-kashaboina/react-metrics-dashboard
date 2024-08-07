@@ -2,7 +2,7 @@
     background: #ffffff; /* White background for the chart container */
     border-radius: 8px; /* Rounded corners for the container */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for better separation */
-    padding: 20px; /* Padding inside the container */
+    /* padding: 20px; Padding inside the container */
     margin: 20px; /* Margin around the container */
     max-width: 100%; /* Ensure the chart fits within the container */
     width: 100%; /* Full width of the container */

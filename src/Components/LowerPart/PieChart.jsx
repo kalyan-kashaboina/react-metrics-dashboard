@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import ReactApexChart from "react-apexcharts";
 
 export const PieChart = () => {
-
   const [series, setSeries] = useState([45, 30, 16, 9]);
   const [options, setOptions] = useState({
     chart: {
@@ -15,7 +14,7 @@ export const PieChart = () => {
         breakpoint: 480,
         options: {
           chart: {
-            width: 200,
+            width: 250,
           },
           legend: {
             position: "bottom",
@@ -26,14 +25,17 @@ export const PieChart = () => {
   });
 
   return (
-    <div className="pie-chart">
-       <h3 >Employees </h3>
-      <ReactApexChart
-        options={options}
-        series={series}
-        type="pie"
-        width={450}
-      />
-    </div>
+    <>
+      <h3>Employees </h3>
+      <div className="pie-chart">
+        <ReactApexChart
+          options={options}
+          series={series}
+          type="pie"
+          width={380}
+          height={250}
+        />
+      </div>
+    </>
   );
 };

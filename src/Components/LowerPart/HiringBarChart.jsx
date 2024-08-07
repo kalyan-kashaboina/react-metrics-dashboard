@@ -11,7 +11,7 @@ const CompanyGrowthBarChart = () => {
   const [options] = useState({
     chart: {
       type: "bar",
-      height: 350,
+      height: 300,
       toolbar: {
         show: false,
       },
@@ -20,7 +20,7 @@ const CompanyGrowthBarChart = () => {
     plotOptions: {
       bar: {
         horizontal: false, // Vertical bars
-        columnWidth: '80%', // Width of bars
+        columnWidth: '70%', // Width of bars
       },
     },
     dataLabels: {
@@ -59,7 +59,7 @@ const CompanyGrowthBarChart = () => {
         options={options}
         series={series}
         type="bar"
-        height={350}
+        height={300}
         width="100%" 
       />
     </div>
