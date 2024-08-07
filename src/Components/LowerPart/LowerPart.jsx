@@ -4,6 +4,7 @@ import CompanyGrowthBarChart from "./HiringBarChart";
 import "./Lowerpart.css";
 import ProjectStatus from "./ProjectStatus";
 import LineChart from "./LineChart";
+import ProjectsPerYear from "./RecruitmentGraph";
 
 
 function LowerPart() {
@@ -15,6 +16,7 @@ function LowerPart() {
         <ProjectStatus />
         <CompanyGrowthBarChart />
         <LineChart/>
+        <ProjectsPerYear/>
      
         </div>
 

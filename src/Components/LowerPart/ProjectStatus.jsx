@@ -3,7 +3,7 @@ import ReactApexChart from 'react-apexcharts';
 
 function ProjectStatus() {
 
-    const [series] = useState([44, 55, 41]);
+    const [series] = useState([8,7,5]);
     const [options] = useState({
       chart: {
         type: 'donut',

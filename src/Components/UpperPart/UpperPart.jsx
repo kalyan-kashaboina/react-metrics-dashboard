@@ -43,7 +43,7 @@ function UpperPart() {
       </div>
       <div className='sub-container'>
         <div className='headers'>Projects</div>
-        <p className='values'>13</p>
+        <p className='values'>20</p>
       </div>
       <div className='sub-container'>
         <div style={{marginLeft:"-60px"}} className='headers'>Employees Status</div>

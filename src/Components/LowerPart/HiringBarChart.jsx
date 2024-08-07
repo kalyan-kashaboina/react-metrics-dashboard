@@ -54,7 +54,7 @@ const CompanyGrowthBarChart = () => {
 
   return (
     <div className="bar-chart">
-      <h3>Company Growth</h3>
+      <h3>Company Population</h3>
       <ReactApexChart
         options={options}
         series={series}
